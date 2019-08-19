@@ -90,7 +90,7 @@ class CssBackgroundAbstractBase(CMSPlugin):
     @property
     def bg_image(self):
         url = self.get_image_url()
-        return 'url({})'.format(url) if url else ''
+        return 'linear-gradient(to bottom,rgba(16,0,38,0.55) 7%,rgba(16,0,38,0.55) 18%,rgba(16,0,38,0.2) 50%,rgba(16,0,38,0.3) 84%,rgba(16,0,38,0.65) 93%,rgba(16,0,38,0.88) 99%), url({})'.format(url) if url else ''
 
     def as_single_rule(self):
         # NOTE: When using the shorthand background property, blank properties will
